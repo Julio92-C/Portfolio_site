@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Site</title>
+    <link rel="stylesheet" type="text/css" href="\static\css\main14.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/5b09007c1f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="checkbox" id="check" onclick="myFunction()">
+            <!--header area start-->
+            <header>
+                <nav id="navbar">
+                    <label for="check">
+                        <i class="fas fa-bars" id="sidebar_btn"></i>
+                    </label>
+                    <div class="left_area">
+                        <h3>Backend <span>Developer</span></h3>
+                    </div>
+                    <ul>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                        <li><a class="nav-link" href="#projects">Work</a></li>
+                        <li><a class="nav-link" href="#about_me">About</a></li>
+                        <li><a class="nav-link" href="#welcome-section">Home</a></li>
+
+                    </ul>
+                </nav>
+                </header-->
+                <!--header area end-->
+        </div>
+
+
+        <div id="side-navbar" class="side-navbar">
+            <!--sidebar start-->
+            <div id="sidebar" class="sidebar">
+                <div class="profile_info">
+                    <img src="static\julio.jpg" class="profile_image" alt="">
+                    <h4>Julio Cesar</h4>
+                </div>
+                <a href="#about_me"><i class="fas fa-info-circle"></i><span>About</span></a>
+                <a href="#projects"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                <a href="#skill_set"><i class="fas fa-cog rotate"></i><span>Skill
+                        sets</span></a>
+                <a href="#contact"><i class="fas fa-table"></i><span>Contact</span></a>
+                <a href="{{ url_for('static', filename='Software_developer_CV.pdf') }}" target="_blank"><i
+                        class="fas fa-th"></i><span>Resume</span></a>
+                <a href="#social_media"><i class="fas fa-link"></i><span>Social media</span></a>
+            </div>
+            <!--sidebar end-->
+        </div>
+        <!-- Content block start -->
+        <div class="content">
+            <div id="welcome-section" class="item2">
+                <div class="background_image">
+                    <h1 class="web_developer">Hey, I am Julio Cesar</h1>
+                    <h2 class="web_developer">a <span class="typed-text"></span><span class="cursor">&nbsp;</span><i
+                            id="emoji" class="far fa-smile-wink"></i>
+                    </h2>
+                </div>
+            </div>
+            <div id="about_me" class="item3">
+                <div class="class_about_me">
+                    <h2 class="class_project">About me</h2>
+                </div>
+                <div class="about_me">
+                    <div class="about_me_picture">
+                        <img src="static\julio.jpg" alt="man wearing suite">
+                    </div>
+                    <div class="about_me_description">
+                        <div class="description_frame">
+                            <h3>Julio Cesar <span>Ortega Cambara</span>, Backend Developer</h3>
+                            <p>
+                                I am a Chemical Engineer with a passion for coding and learning. I have been
+                                working on Biotechnology field the past 4 years, as good result I got the certification
+                                of
+                                <a href="{{ url_for('static', filename='MOST.pdf') }}" target="_blank">Talented Young
+                                    Scientist Program</a> organized by MOST at Tsinghua
+                                University Campus. Also, I realized I
+                                wanted to find an outlet
+                                to use
+                                technology to positively increase efficiency in our daily lives. I have always had a
+                                love of studying new languages, and I quickly found that programming was the perfect
+                                path towards challenging my learning and productive output.
+                            </p>
+                            <p>
+                                Completing the <a
+                                    href="https://www.freecodecamp.org/certification/julio92-c/responsive-web-design"
+                                    target=”_blank”>Responsive Web Design</a> and <a
+                                    href="{{ url_for('static', filename='python_course.pdf') }}"
+                                    target=”_blank”>Complete
+                                    Python
+                                    Mastery</a> courses
+                                trained my analytical
+                                problem solving skills while equipping me with a robust knowledge of HTML, CSS,
+                                Javascript, Python,
+                                Flask and many more technologies. Creating a variety of dynamic, interactive projects
+                                affirmed my decision to pursue a life long career in programming and web development.
+                            </p>
+                            <p>
+                                Now, I am seeking opportunities to continue learning while challenging myself in the
+                                development field. I am eager to apply my skills and take on projects which will bring
+                                value and efficiency into our daily lives.
+                            </p>
+                            <button> <a href="{{ url_for('static', filename='Software_developer_CV.pdf') }}"
+                                    target="_blank">Resume</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects" class="item4">
+                <h2>These are <span>some of</span> my projects</h2>
+                <div class="projects_frame">
+                    <div class="itemOne tooltip">
+                        <span class="tooltiptext">freeCodeCamp: Personal Portfolio Project from Reponsive Web Design
+                            course</span>
+                        <div class="project_frame_top">
+                            <a href="https://codepen.io/julio92-c/full/GRZmjEM" target="_blank">
+                                <img src="static\pesonal_portfolio_img.jpg" alt="personal_portfolio_imag">
+                            </a>
+
+                        </div>
+                        <h3>
+                            <a href="https://codepen.io/julio92-c/full/GRZmjEM" target="_blank">Personal Portfolio</a>
+                        </h3>
+                    </div>
+                    <div class="itemTwo tooltip">
+                        <span class="tooltiptext">freeCodeCamp: Technical Documentation Page Project from Reponsive Web
+                            Design course</span>
+                        <div class="project_frame_top ">
+                            <a href="https://codepen.io/julio92-c/full/zYqOoaM" target="_blank">
+                                <img src="static\tech_doc_page_img.jpg" alt="tech_doc_page_img">
+                            </a>
+
+                        </div>
+                        <h3>
+                            <a href="https://codepen.io/julio92-c/full/zYqOoaM" target="_blank">Technical
+                                Documentation Page</a>
+                        </h3>
+                    </div>
+
+                    <div class="itemThree tooltip">
+                        <span class="tooltiptext">freeCodeCamp: Landing Page Project from Reponsive Web
+                            Design course</span>
+                        <div class="project_frame_top ">
+                            <a href="https://codepen.io/julio92-c/full/VweROzz" target="_blank">
+                                <img src="static\product_landing_page_img.jpg" alt="product_landing_page_imag">
+                            </a>
+
+                        </div>
+                        <h3>
+                            <a href="https://codepen.io/julio92-c/full/VweROzz" target="_blank">Product Landing Page</a>
+                        </h3>
+                    </div>
+
+                    <div class="itemFour tooltip">
+                        <span class="tooltiptext">CodeInstitute: Tea Recipe Page Project from Five Days Coding
+                            Challenge. This
+                            course is an introduction to HTML, CSS and Javascript</span>
+                        <div class="project_frame_top">
+                            <a href="https://codepen.io/julio92-c/full/BajMpER" target="_blank">
+                                <img src="static\tea_recipe_img.jpg" alt="tea_recipe_img">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="https://codepen.io/julio92-c/full/BajMpER" target="blank">Tea Recipe Page</a>
+                        </h3>
+                    </div>
+                    <div class="itemFive tooltip">
+                        <span class="tooltiptext">freeCodeCamp: Login Form Project from Reponsive Web
+                            Design course</span>
+                        <div class="project_frame_top">
+                            <a href="https://codepen.io/julio92-c/full/LYGmOer" target="_blank">
+                                <img src="static\survey_form_img.jpg" alt="survey_form_img">
+                            </a>
+
+                        </div>
+                        <h3>
+                            <a href="https://codepen.io/julio92-c/full/LYGmOer" target="_blank">Survey Form Project</a>
+                        </h3>
+                    </div>
+                    <div class="itemSix tooltip">
+                        <span class="tooltiptext">Youtube tutorial: Feedback App buil with HTML, CSS, Python, Flask,
+                            Mailtrap and deployed on Heroku server</span>
+                        <div class="project_frame_top">
+                            <a href="https://lexusfeedbackjc.herokuapp.com/" target="_blank">
+                                <img src="static\feedback_app_img.jpg" alt="feedback_app_img">
+                            </a>
+
+                        </div>
+                        <h3>
+                            <a href="https://lexusfeedbackjc.herokuapp.com/" target="_blank">Feedback App</a>
+                        </h3>
+                    </div>
+
+
+
+                </div>
+                <h4 id="skill_set">Technical skills</h4>
+                <div class="tech_skills">
+                    <ul>
+                        <li>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-github"></i>
+                            <i class="fab fa-bootstrap"></i>
+                            <i class="fab fa-codepen"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-git-alt"></i>
+                            <i class="fab fa-sass"></i>
+                            <i class="fab fa-windows"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contact" class="item5">
+                <h2>Contact Me</h2>
+                <div class="contact_me">
+                    <div class="get_in_touch">
+                        <h3>Get in touch</h3>
+                        <h4><i class="fas fa-map-marker-alt"></i><strong>Location:</strong> Beijing, China</h4>
+                        <h4><i class="fas fa-envelope"></i><strong>Email:</strong> juliocesar92@163.com</h4>
+                        <h4><i class="fab fa-weixin"></i><strong>WeChat ID:</strong> wxid_bzolzi5rv0ii22</h4>
+                        <h4><i class="fab fa-twitter-square"></i><strong>Twitter username:</strong> @JulioCe95898617
+                        </h4>
+                        <h4><i class="fab fa-github"></i><strong>GitHub username:</strong> Julio92-C</h4>
+                        <h4><i class="fab fa-codepen"></i><strong>Codepen username:</strong> Julio92-C</h4>
+                        <h4><i class="fas fa-phone"></i><strong>Phone:</strong> +86 13621222584</h4>
+                    </div>
+                    <div class="message">
+                        {% if message %}
+                        <p style="text-align: center;">{{ message | safe }}</p>
+                        {% endif %}
+                        <div class="form-content">
+                            <form action="/home" method="POST">
+                                <div class="form-class">
+                                    <label class="label-items" for="exampleFormControlTextarea1">
+                                        <h3><i class="far fa-comment-alt"></i><span class="light">Leave a comment</span>
+                                        </h3>
+                                    </label>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="comments" id="exampleFormControlTextarea1"
+                                            rows="10" placeholder="Your message *"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-class">
+                                    <input id="left" class="user" type="text" name="username" value=""
+                                        placeholder="Name *" required>
+                                    <input id="right" class="user" type="text" name="email" value=""
+                                        placeholder="Email *" required>
+                                </div>
+                                <button id="submit" class="button-class" type="submit" value="submit"
+                                    class="btn btn-primary">Send
+                                    Message</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="social_media" class="item6">
+                <div class="item6_frame">
+                    <h2>Let's work together...</h2>
+                    <h5><em>How do you take your coffee?<em></h5>
+                    <ul>
+                        <li><a id="profile-link"
+                                href="https://www.linkedin.com/in/julio-cesar-ortega-cambara-2565b4176/"
+                                target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a id="profile-link" href="https://github.com/Julio92-C" target="_blank"><i
+                                    class="fab fa-github"></i></a></li>
+                        <li><a id="profile-link" href="https://twitter.com/JulioCe95898617" target="_blank"><i
+                                    class="fab fa-twitter-square"></i></a></li>
+                        <li><a id="profile-link" href="https://codepen.io/julio92-c" target="_blank"><i
+                                    class="fab fa-codepen"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item7">
+                <footer>
+                    <p><span>&#169;</span> Copyright 2020 Designed by Julio92-C</p>
+                    <p>Thanks for visiting!!!</p>
+                </footer>
+            </div>
+        </div>
+        <!-- Content block end -->
+
+
+
+
+        <script src="static\main.js"></script>
+</body>
+
+</html>
